@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import Company from "./compunat/Company";
+import CompanyBank from './compunat/CompanyBank';
+import Contact from"./compunat/contact";
+import Button from "./compunat/button";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form>
+    <Company/>
+    <CompanyBank/>
+    <Contact/>
+    <Button/>
+    </form>
   );
 }
 
