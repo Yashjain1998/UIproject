@@ -16,3 +16,45 @@
 #button{
   font-size: xx-large;
 }
+
+#form{
+  display: flex;
+}
+.list{
+  border: 1px solid gray;
+}
+.list>*{
+  border-bottom: 1px solid gray;
+  height: 10px;
+}
+
+/* Your CSS file or component styles */
+.tags-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+
+.tags-list li {
+  width: 100%;
+  padding-block: 2rem;
+
+}
+
+.tags-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+
+.tags-list li:hover {
+  background-color: lightslategrey;
+}
+.active-link{
+  background-color: lightgray;
+}

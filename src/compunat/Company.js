@@ -1,187 +1,443 @@
-import React from 'react';
+import React from "react";
 import {
   Container,
   Grid,
   Typography,
   FormControl,
-  InputLabel,
-  Input,
   FormGroup,
-} from '@mui/material';
+} from "@mui/material";
 
 const CompanyForm = () => {
   return (
-    <Container>
+    
       <div>
-        <div className='contact'>
-        <Typography variant="h4" gutterBottom>
-          Company Information
-        </Typography>
+        <div className="contact" style={{paddingBlock:'1rem'}}>
+          <Typography variant="h4">
+            Company Information
+          </Typography>
         </div>
         <Grid container spacing={3}>
           <Grid item xs={5}>
             <FormGroup>
-              <FormControl fullWidth>
-                <InputLabel>Company Name:</InputLabel>
-                <Input type="text" required/>
+              <FormControl
+                fullWidth
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  paddingTop: "1rem",
+                }}
+              >
+                <label style={{ paddingRight: "10px", width: '20%', textAlign:'end'}}>Company Name:</label>
+                <input type="text" style={{ height: "10px", width:'80%' }} required />
               </FormControl>
-              <FormControl fullWidth>
-                <InputLabel>Address 1:</InputLabel>
-                <Input type="text" required/>
+              <FormControl
+                fullWidth
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  paddingTop: "1rem",
+                }}
+              >
+                <label style={{ paddingRight: "10px", width:'20%', textAlign:'end'}}>Address 1:</label>
+                <input type="text" style={{ height: "10px", width:'80%'}} required />
               </FormControl>
-              <FormControl fullWidth>
-                <InputLabel>Address 2:</InputLabel>
-                <Input type="text" required/>
+              <FormControl
+                fullWidth
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  paddingTop: "1rem",
+                }}
+              >
+                <label style={{ paddingRight: "10px", width:'20%', textAlign:'end'}}>Address 2:</label>
+                <input type="text"style={{ height: "10px", width:'80%'}} required />
               </FormControl>
-              <FormControl fullWidth>
-                <InputLabel>Address 3:</InputLabel>
-                <Input type="text" required/>
+              <FormControl
+                fullWidth
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  paddingTop: "1rem",
+                }}
+              >
+                <label  style={{ paddingRight: "10px", width:'20%', textAlign:'end'}}>Address 3:</label>
+                <input type="text" style={{ height: "10px", width:'80%'}} required />
               </FormControl>
-              <FormControl fullWidth>
-                <InputLabel>Email Id:</InputLabel>
-                <Input type="email" required placeholder='VIJAY@FUTURETECHSOFT.IN'/>
+              <FormControl
+                fullWidth
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  paddingTop: "1rem",
+                }}
+              >
+                <label  style={{ paddingRight: "10px", width:'20%', textAlign:'end'}}>Email Id:</label>
+                <input
+                  type="email"
+                  style={{ height: "10px", width:'80%'}} 
+                  required
+                  placeholder="VIJAY@FUTURETECHSOFT.IN"
+                />
               </FormControl>
-              <Grid container spacing={2}>
+              <Grid container>
                 <Grid item xs={6}>
-                  <FormControl fullWidth>
-                    <InputLabel>PAN NO:</InputLabel>
-                    <Input type="text" placeholder='APM11343AMP' required/>
+                  <FormControl
+                    fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label style={{ paddingRight: "10px", width:'25%', textAlign:'end'}}>PAN NO:</label>
+                    <input
+                      type="text"
+                      style={{ height: "10px", width:'75%'}} 
+                      placeholder="APM11343AMP"
+                      required
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item xs={6}>
-                  <FormControl fullWidth>
-                    <InputLabel>GST NO:</InputLabel>
-                    <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                  <FormControl
+                    fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label  style={{ paddingRight: "10px", width:'25%', textAlign:'end'}}>GST NO:</label>
+                    <input
+                      type="text"
+                      style={{ height: "10px", width:'75%'}} 
+                      placeholder="24AAKCC5083C1ZV"
+                    />
                   </FormControl>
                 </Grid>
               </Grid>
-              <Grid container spacing={2}>
+              <Grid container>
                 <Grid item xs={6}>
-                  <FormControl fullWidth>
-                    <InputLabel>TAX NO:</InputLabel>
-                    <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                  <FormControl
+                    fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label  style={{ paddingRight: "10px", width:'25%', textAlign:'end'}}>TAX NO:</label>
+                    <input
+                      type="text"
+                      style={{ height: "10px", width:'75%'}} 
+                      placeholder="24AAKCC5083C1ZV"
+                    />
                   </FormControl>
                 </Grid>
                 <Grid item xs={6}>
-                  <FormControl fullWidth>
-                    <InputLabel>CIN NO:</InputLabel>
-                    <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                  <FormControl
+                    fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label  style={{ paddingRight: "10px", width:'25%', textAlign:'end'}}>CIN NO:</label>
+                    <input
+                      type="text"
+                      style={{ height: "10px", width:'75%'}} 
+                      placeholder="24AAKCC5083C1ZV"
+                    />
                   </FormControl>
                 </Grid>
               </Grid>
-              <Grid container spacing={2}>
-                <Grid item xs={6}>
-                  <FormControl fullWidth>
-                    <InputLabel>  </InputLabel>
-                    <Input type="date"/>
+              <Grid container>
+                <Grid item xs={5}>
+                  <FormControl
+                    fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label style={{ paddingRight: "10px" }}>Start Date:</label>
+                    <input type="date" style={{ height: "10px" }} />
                   </FormControl>
                 </Grid>
-                <Grid item xs={6}>
-                  <FormControl fullWidth>
-                    <InputLabel>Business Currency:</InputLabel>
-                    <Input type="text" placeholder='DOLLAR'/>
+                <Grid item xs={7}>
+                  <FormControl
+                    fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label style={{ paddingRight: "10px", width:'40%', textAlign:'end'}}>
+                      Business Currency:
+                    </label>
+                    <input
+                      type="text"
+                      style={{ height: "10px", width:'60%'}}
+                      placeholder="DOLLAR"
+                    />
                   </FormControl>
                 </Grid>
               </Grid>
             </FormGroup>
           </Grid>
           <Grid item xs={5}>
-            <FormControl fullWidth>
-              <InputLabel>Short Name:</InputLabel>
-              <Input type="text" placeholder='FUTURETECH'/>
+            <FormControl
+              fullWidth
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <label style={{ paddingRight: "10px" }}>Short Name:</label>
+              <input
+                type="text"
+                style={{ height: "10px" }}
+                placeholder="FUTURETECH"
+              />
             </FormControl>
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>Count:</InputLabel>
-                  <Input type="text" required/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>Count:</label>
+                  <input type="text" style={{ height: "10px", width:'100%'}} required />
                 </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>State:</InputLabel>
-                  <Input type="text" required/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>State:</label>
+                  <input type="text" style={{ height: "10px", width:'100%' }} required />
                 </FormControl>
               </Grid>
             </Grid>
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>City:</InputLabel>
-                  <Input type="text" required/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>City:</label>
+                  <input type="text" style={{ height: "10px", width:'100%' }} required />
                 </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>Pin Code:</InputLabel>
-                  <Input type="Number" required/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px", width:'30%' }}>Pin Code:</label>
+                  <input type="Number" style={{width:'70%', height:'10px'}} required />
                 </FormControl>
               </Grid>
             </Grid>
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>Phone No:</InputLabel>
-                  <Input type="Numaber" />
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px"}}>Phone No:</label>
+                  <input type="Numaber" style={{height:'10px'}}/>
                 </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>Mobile No:</InputLabel>
-                  <Input type="Number" required/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px", width: '30%' }}>Mobile No:</label>
+                  <input type="Number" style={{height:'10px', width:'70%'}} required />
                 </FormControl>
               </Grid>
             </Grid>
-            <FormControl fullWidth>
-              <InputLabel>Website:</InputLabel>
-              <Input type="text" />
+            <FormControl
+              fullWidth
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                paddingTop: "1rem",
+              }}
+            >
+              <label style={{ paddingRight: "10px" }}>Website:</label>
+              <input type="text" style={{ height: "10px", width:'55%' }} />
             </FormControl>
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>Business Reg No:</InputLabel>
-                  <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>
+                    Business Reg No:
+                  </label>
+                  <input
+                    type="text"
+                    style={{ height: "10px", width:'100%' }}
+                    placeholder="24AAKCC5083C1ZV"
+                  />
                 </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>VAT No:</InputLabel>
-                  <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>VAT No:</label>
+                  <input
+                    type="text"
+                    style={{ height: "10px", width:'100%' }}
+                    placeholder="24AAKCC5083C1ZV"
+                  />
                 </FormControl>
               </Grid>
             </Grid>
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>RBI Code No:</InputLabel>
-                  <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>RBI Code No:</label>
+                  <input
+                    type="text"
+                    style={{ height: "10px" }}
+                    placeholder="24AAKCC5083C1ZV"
+                  />
                 </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>IEC Code:</InputLabel>
-                  <Input type="text" placeholder='24AAKCC5083C1ZV'/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>IEC Code:</label>
+                  <input
+                    type="text"
+                    style={{ height: "10px", width:'100%'}}
+                    placeholder="24AAKCC5083C1ZV"
+                  />
                 </FormControl>
               </Grid>
             </Grid>
             <Grid container spacing={2}>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>AC Currency:</InputLabel>
-                  <Input type="text" placeholder='INR'/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>AC Currency:</label>
+                  <input
+                    type="text"
+                    style={{ height: "10px" }}
+                    placeholder="INR"
+                  />
                 </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <FormControl fullWidth>
-                  <InputLabel>Is Action:</InputLabel>
-                  <Input type="text" placeholder='Y/N'/>
+                <FormControl
+                  fullWidth
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    paddingTop: "1rem",
+                  }}
+                >
+                  <label style={{ paddingRight: "10px" }}>Is Action:</label>
+                  <input
+                    type="text"
+                    style={{ height: "10px", width:'100%' }}
+                    placeholder="Y/N"
+                  />
                 </FormControl>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
       </div>
-    </Container>
+    
   );
 };
 

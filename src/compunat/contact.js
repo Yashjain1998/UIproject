@@ -1,74 +1,109 @@
 import React from "react";
-import { useState } from "react";
 import '../App.css';
 import {
-  Container,
   Typography,
   Grid,
   FormControl,
-  InputLabel,
-  Input,
   FormGroup,
   List,
   ListItem,
-  IconButton,
+
 } from "@mui/material";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 
 const CompanyContactForm = () => {
-  const [contactform,setcontactform]=useState(false);
+ 
   return (
-    <Container>
+   
       <div>
-        <div className="contact" onClick={()=>setcontactform(!contactform)}>
+        <div className="contact" style={{paddingBlock:'1rem'}}>
           <Typography variant="h4">Company Contact</Typography>
-          <div id="button"><IconButton>
-          <KeyboardArrowDownIcon />
-        </IconButton></div>
         </div>
-        {contactform &&
+        
         <div>
           <Grid container spacing={4}>
             <Grid item xs={5}>
               <FormGroup style={{ display: "flex", flexDirection: "column" }}>
                 <div style={{ display: "flex" }}>
-                  <FormControl fullWidth>
-                    <InputLabel>Contact Name</InputLabel>
-                    <Input type="text" />
+                  <FormControl fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <label style={{paddingRight:'10px'}}>Contact Name:</label>
+                    <input type="text" style={{height:'10px', width:'60%' }} required/>
                   </FormControl>
                 </div>
                 <div style={{ display: "flex" }}>
-                  <FormControl fullWidth>
-                    <InputLabel>Designation</InputLabel>
-                    <Input type="text" />
+                  <FormControl fullWidth
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      paddingTop: "1rem",
+                    }}
+                    >
+                    <label style={{paddingRight:'10px'}}>Designation :</label>
+                    <input type="text" style={{width:'80%', height:'10px' }} required/>
                   </FormControl>
                 </div>
                 <div style={{ display: "flex" }}>
                   <div style={{ marginRight: "1rem" }}>
-                    <FormControl fullWidth>
-                      <InputLabel>Email Id:</InputLabel>
-                      <Input type="text" />
+                    <FormControl fullWidth
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        paddingTop: "1rem",
+                      }}
+                      >
+                      <label style={{paddingRight:'10px', width:'30%'}}>Email Id :</label>
+                      <input type="text" style={{height:'10px', width:'70%' }} required />
                     </FormControl>
                   </div>
                   <div>
-                    <FormControl fullWidth>
-                      <InputLabel>Mobile No:</InputLabel>
-                      <Input type="text" />
+                    <FormControl fullWidth
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        paddingTop: "1rem",
+                      }}
+                      >
+                      <label style={{paddingRight:'10px', width:'30%', textAlign:'end'}}>Mobile No :</label>
+                      <input type='tel' style={{height:'10px', width:'70%'}} required/>
                     </FormControl>
                   </div>
                 </div>
                 <div style={{ display: "flex" }}>
                   <div style={{ marginRight: "1rem" }}>
-                    <FormControl fullWidth>
-                      <InputLabel>PAN No:</InputLabel>
-                      <Input type="text" />
+                    <FormControl fullWidth
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        paddingTop: "1rem",
+                      }}
+                      >
+                      <label style={{paddingRight:'10px'}}>PAN No:</label>
+                      <input type="text" style={{height:'10px'}} placeholder="APM1134AMP"/>
                     </FormControl>
                   </div>
                   <div>
-                    <FormControl fullWidth>
-                      <InputLabel>Adhar No:</InputLabel>
-                      <Input type="number" />
+                    <FormControl fullWidth
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        paddingTop: "1rem",
+                      }}
+                      >
+                      <label style={{paddingRight:'10px', width:'30%', textAlign:'end' }}>Adhar No:</label>
+                      <input type='number' style={{height:'10px', width:'70%'}} placeholder="1582 6858 6985"/>
                     </FormControl>
                   </div>
                 </div>
@@ -76,8 +111,8 @@ const CompanyContactForm = () => {
             </Grid>
             <Grid item xs={6}>
               <div style={{ display: "flex", flexDirection: "column" }}>
-                <Typography variant="h6">+ Contact</Typography>
-                <List>
+                <Typography variant="h6" style={{width:'30%', textAlign:'center'}}>+ Contact</Typography>
+                <List className="list" style={{width:'30%'}}>
                   <ListItem>VIJAY PRAJAPATI</ListItem>
                   <ListItem>JAYESH PRAJAPATI</ListItem>
                   {/* Add other list items as needed */}
@@ -86,9 +121,9 @@ const CompanyContactForm = () => {
             </Grid>
           </Grid>
         </div>
-        }
+        
       </div>
-    </Container>
+    
   );
 };
 
